@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zomato Clone</title>
+  <link rel="stylesheet" href="css/styles_zomato.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="assets/font/font.txt">
+
+
+
+</head>
+
+<body>
+  <!-- start writing your code -->
+  <header>
+    <nav>
+      <div style="margin-left:55px;">
+        Get The App
+      </div>
+      <div>
+        <ul>
+          <li>Add Restaurant</li>
+          <li>Log In</li>
+          <li>Sign Up</li>
+        </ul>
+      </div>
+    </nav>
+    <img src="images/Zomato-Logo.png" class="logo-container"></img>
+    <h3>Discover the best food & drinks in Delhi NCR</h3>
+    <div class="search-container">
+      <i class="material-icons" style="color:white;">location_on</i>
+      <select>
+        <option>Orsova</option>
+        <option>Drobeta Turnu Severin</option>
+        <option>Baile Herculane</option>
+      </select>
+      <i class="material-icons" style="color:white;">search</i>
+      <input type="textarea" placeholder="Search for restaurant, cuisines or a dish">
+    </div>
+
+  </header>
+  <main>
+    <div class="fliers">
+      <section class="activities-container">
+        <div class="activity">
+          <div>
+            <img src="images/Online-Food.png" alt="Online-Food" class="image-activity"></img>
+          </div>
+          <h3>Order Online</h3>
+          <p>Stay home and order to your doorstep</p>
+        </div>
+        <div class="activity">
+          <div>
+            <img src="images/Dine-Out.png" alt="Dine-Out" class="image-activity"></img>
+          </div>
+          <h3>Dining</h3>
+          <p>View the city's favourite dining venues</p>
+        </div>
+        <div class="activity">
+          <div>
+            <img src="images/Dine-Out.png" alt="Dine-Out" class="image-activity"></img>
+          </div>
+          <h3>Nightlife and Clubs</h3>
+          <p>Explore the city's top nightlife outlets</p>
+        </div>
+      </section>
+
+      <h2 class="localities-heading">Popular localities in and around Delhi NCR</h2>
+      <section class="localities-container">
+
+
+        <div class="locality">
+          <h6>Stare Mesto</h6>
+          <p>78 places</p>
+        </div>
+        <div class="locality">
+          <h6>Sever</h6>
+          <p>9 places</p>
+        </div>
+        <div class="locality">
+          <h6>Zapad</h6>
+          <p>11 places</p>
+        </div>
+        <div class="locality">
+          <h6>Juh</h6>
+          <p>22 places</p>
+        </div>
+        <div class="locality">
+          <h6>Nad Jazerom</h6>
+          <p>5 places</p>
+        </div>
+
+        <div class="locality">
+          <h6>Juh</h6>
+          <p>22 places</p>
+        </div>
+        <div class="locality">
+          <h6>Nad Jazerom</h6>
+          <p>5 places</p>
+        </div>
+        <div class="locality">
+          <h6>Nad Jazerom</h6>
+          <p>5 places</p>
+        </div>
+
+
+      </section>
+    </div>
+  </main>
+  <footer>
+    <img src="images/Iphone.png" class="phone-image"></img>
+    <div class="footer-container">
+      <h1>Get the Zomato App</h1>
+      <h3>We will send you a link, open it on your phone to download the app</h3>
+
+      <input type="radio" name="option" id="email" value="email" class="email-radio" checked="true"
+        onchange="emailFunction()">
+      <label for="email">Email</label>
+      <input type="radio" name="option" id="telefon" value="telefon" onchange="telFunction()">
+      <label for="telefon">Telefon</label>
+
+      <br>
+      <input type="email" placeholder="Email" class="email-placeholder" id="inputtext"></input>
+
+      <button class="share-button">Share App Link</button>
+
+      <p>Download app from</p>
+      <button class="google-play-button"></button>
+      <button class="app-store-button"></button>
+      <!--
+            <img src="assets/images/Google-Play.png"></img>
+            <img src="assets/images/App-Store.png"></img>
+            -->
+    </div>
+
+  </footer>
+
+  <script>
+    function emailFunction() {
+      document.getElementById("inputtext").type = 'email';
+      document.getElementById("inputtext").placeholder = 'Email'
+    }
+
+    function telFunction() {
+      document.getElementById("inputtext").type = 'tel';
+      document.getElementById("inputtext").placeholder = 'Type here...';
+      document.getElementById("inputtext").pattern = "[0-9]{3}-[0-9]{3}-[0-9]{4}";
+    }
+
+
+  </script>
+</body>
+
+</html>
